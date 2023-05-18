@@ -1,10 +1,3 @@
-
-
-
-
-# ref
-# https://community.spiceworks.com/topic/2347813-error-cannot-convert-value-memorystartupbytes-to-type-system-int16#:~:text=Try%20the%20following%3A%20Powershell%20%24VM%20%3D%20New-VM%20-Name,want%20them%20to%20be%20parsed%20as%20a%20parameters.
-
 $vmem_options = @(
     [PSCustomObject]@{Size = '512MB'; Value = '512000000'}
     [PSCustomObject]@{Size = '1GB'; Value = '1024000000'}
