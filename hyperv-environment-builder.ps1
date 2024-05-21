@@ -3,6 +3,7 @@ $vmem_options = @(
     [PSCustomObject]@{Size = '1GB'; Value = '1024000000'}
     [PSCustomObject]@{Size = '4GB'; Value = '4096000000'}
     [PSCustomObject]@{Size = '8GB'; Value = '8192000000'}
+    [PSCustomObject]@{Size = '16GB'; Value = '16384000000'}
 )
 
 $vhd_options = @(
@@ -11,6 +12,7 @@ $vhd_options = @(
     [PSCustomObject]@{Size = '64GB'; Value = '68719476736'}
     [PSCustomObject]@{Size = '128GB'; Value = '137438953472'}
     [PSCustomObject]@{Size = '256GB'; Value = '274877906944'}
+    [PSCustomObject]@{Size = '512GB'; Value = '549755813888'}
 )
 
 $Form1 = New-Object -TypeName System.Windows.Forms.Form
@@ -30,7 +32,6 @@ $Form1 = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.NumericUpDown]$numeric_vcpucount = $null
 
 function InitializeComponent {
-    #$resources = . (Join-Path $PSScriptRoot 'newform16.resources.ps1')
     $Label_hypervwarning = (New-Object -TypeName System.Windows.Forms.Label)
     $Label_vswitch = (New-Object -TypeName System.Windows.Forms.Label)
     $Label_vmcount = (New-Object -TypeName System.Windows.Forms.Label)
@@ -142,7 +143,8 @@ function InitializeComponent {
     $combo_vswitch.TabIndex = [System.Int32]11
 
     $count = 0
-    $path = 'D:\Hyper-V'
+    $path = 'C:\Hyper-V'
+    New-Item -Path $path -ItemType Directory
 
     function new-vms {
         do {
