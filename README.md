@@ -28,8 +28,7 @@ This PowerShell script is a GUI application for automating the creation of virtu
 ## Notes and Considerations
 
 - **Limitations**: This script may have limitations or known issues, which are detailed in the repository.
-- **Contributing**: Contributions to the project, such as bug reports or feature suggestions, are welcome.
-- **License**: This script is distributed under [INSERT LICENSE HERE]. See the LICENSE file for details.
+- **Contributing**: Contributions, such as bug reports or feature suggestions, are welcomed to the project.
 
 ## References
 
