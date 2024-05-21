@@ -3,7 +3,7 @@
 This PowerShell script is a GUI application for automating the creation of virtual machines in a Hyper-V environment.
 
 ![screenshot](assets/environmentBuilderUI.png)
-### Features
+## Features
 
 - **User Interface**: The script utilizes Windows Forms to create a graphical interface with labels, textboxes, numeric up-down controls, and buttons.
 - **Configuration Options**: Users can specify the count of virtual machines, CPU count, memory size, storage size, and virtual switch selection.
