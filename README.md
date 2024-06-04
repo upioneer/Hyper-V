@@ -34,3 +34,7 @@ This PowerShell script is a GUI application for automating the creation of virtu
 
 - [Hyper-V Documentation](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/)
 - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+
+## Authors
+
+- [@upioneer](https://www.github.com/upioneer)
